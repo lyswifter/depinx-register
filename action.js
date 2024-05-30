@@ -99,7 +99,7 @@ const App = {
             // Lets digg into app
             // console.info("App mounted!");
             // console.info("Vue version", app.version);
-            // console.info("Element Plus version", ElementPlus.version);
+            console.info("Element Plus version", ElementPlus.version);
             // console.info("app", app);
             // console.info("props", props);
             // console.info("context", context);
@@ -119,5 +119,5 @@ const App = {
 
 // Create new Vue app
 const app = Vue.createApp(App);
-// app.use(ElementPlus);
+app.use(ElementPlus);
 app.mount("#app");
