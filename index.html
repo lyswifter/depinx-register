@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo_banner@2x.png">
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>DepinX</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="register-container">
+            <div id="header-view">
+                <div>
+                    <a href="https://depinx.com">
+                        <img style="width: 154px;margin-top: 15px;margin-left: 20px;" src="./logo_nav@2x.png"
+                            alt="depinX" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-view">
+                <div>
+                    <h2>Registration Information</h2>
+                    <h4>Please fill out the form truthfully. We will respond to you via email within 24 hours after
+                        submission.</h4>
+                </div>
+
+                <div class="form-item">
+                    <div class="input-title">Email Address *</div>
+                    <input name="" id="" class="input-view" v-model="form.email"
+                        placeholder="please input email address">
+                </div>
+
+                <br>
+
+                <div class="form-item">
+                    <div class="input-title">Telegram Username *</div>
+                    <input name="" id="" class="input-view" v-model="form.tgName"
+                        placeholder="please input telegram username">
+                    <div class="subtitle-view">Go to 'Settings' in the telegram app, you only need to enter the text
+                        that
+                        follows the '@'
+                        symbol.</div>
+                </div>
+
+                <br>
+
+                <div class="form-item">
+                    <div class="input-title">Number of NFT *</div>
+                    <input name="" id="" class="input-view" v-model="form.nftNum" placeholder="please input nft number">
+                    <div class="subtitle-view">If you have multiple checker NFTs, please specify the exact number.
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="form-item">
+                    <div class="input-title">Referral Code</div>
+                    <input name="" id="" class="input-view" v-model="form.code"
+                        placeholder="please input referral code">
+                    <div class="subtitle-view">If you have a referral code from a corresponding referral channel,
+                        please
+                        enter it. If not,
+                        just leave it blank.</div>
+                </div>
+
+                <div class="btn-view">
+                    <button class="btn-v" @click="onSubmit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include our Vue app. See file content for more details. -->
+    <script src="./action.js"></script>
+    <!-- // End Begin Vue app -->
+</body>
+
+</html>
