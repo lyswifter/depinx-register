@@ -19,7 +19,7 @@ const App = {
                 nftNum: 1,
                 tgName: '',
             },
-            uploadUrl: "https://data-center.skyipfs.com" + "/api/aethir/",
+            uploadUrl: "http://103.163.186.76:38189" + "/api/aethir/",
         };
     },
     methods: {
