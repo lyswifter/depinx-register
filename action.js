@@ -19,7 +19,7 @@ const App = {
                 nftNum: 1,
                 tgName: '',
             },
-            uploadUrl: "http://103.163.186.76:38189" + "/api/aethir/",
+            uploadUrl: "https://depinx.com" + "/api/aethir/",
         };
     },
     methods: {
