@@ -27,10 +27,11 @@
                 </div>
             </div>
 
-            <div class="main-view">
+            <div class="main-view" v-if="!isFilled">
                 <div>
                     <h2 style="color: white;">Registration Information</h2>
-                    <h4 style="color: white;">Please fill out the form truthfully. We will respond to you via email within 24 hours after
+                    <h4 style="color: white;">Please fill out the form truthfully. We will respond to you via email
+                        within 24 hours after
                         submission.</h4>
                 </div>
 
@@ -77,12 +78,26 @@
                     <button class="btn-v" @click="onSubmit">Submit</button>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Include our Vue app. See file content for more details. -->
-    <script src="./action.js"></script>
-    <!-- // End Begin Vue app -->
+            <div class="main-view" v-else>
+                <div>
+                    <h2 style="color: white;">Registration Result:</h2>
+                    <h4 style="color: white;">
+                        Thank you for your application. You can check your email after 30 minutes and follow the
+                        instructions provided in the email.
+                    </h4>
+
+                    <h4 style="color: white;">
+                        If you have any questions, you can contact us in <a href="https://t.me/DePINX_Official"
+                            target="_blank">https://t.me/DePINX_Official</a>.
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Include our Vue app. See file content for more details. -->
+        <script src="./action.js"></script>
+        <!-- // End Begin Vue app -->
 </body>
 
 </html>

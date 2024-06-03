@@ -7,6 +7,7 @@
 .register-container {
     background-color: rgba(9, 20, 58);
     padding-bottom: 80px;
+    min-height: 100vh;
 }
 
 @media screen and (max-width: 767px) {

@@ -11,8 +11,7 @@ const {
 const App = {
     data() {
         return {
-            input: ref(""),
-            message: "Press Me!",
+            isFilled: false,
             form: {
                 email: '',
                 code: '',
@@ -80,6 +79,8 @@ const App = {
                     message: "Upload successed!",
                     type: "success",
                 });
+
+                this.isFilled = true
             } else {
                 this.$notify({
                     title: "Error",
